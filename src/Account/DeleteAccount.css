@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Consider using a modern font like Google Fonts */
+    background-color: #ffffff; /* Light background for contrast */
+    color: #333; /* Darker text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Container */
+.formContainer {
+    padding: 30px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 40px auto; /* Center and add margin for spacing */
+}
+
+
+
+/* Titles */
+.title {
+    font-size: 26px; /* Larger title font */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #223d3c; /* Primary color for titles */
+}
+
+.subtitle {
+    font-size: 16px; /* Slightly larger subtitle font */
+    margin-bottom: 15px;
+    color: #ff4d4d; /* Red color for emphasis */
+}
+
+/* Confirmation Row */
+.confirmationRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.radioGroup {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.requestRow {
+    margin-bottom: 15px;
+}
+
+/* Input Styles */
+.emailInput,
+.passwordInput,
+.reasonInput {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 12px;
+    width: 100%;
+    background-color: #f9f9f9;
+    font-size: 14px; /* Increased font size for inputs */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+.emailInput:focus,
+.passwordInput:focus,
+.reasonInput:focus {
+    border-color: #223d3c; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Reason Input */
+.reasonInput {
+    height: 120px; /* Adjust height for better visibility */
+}
+
+/* Error Message */
+.errorMessage {
+    color: #ff4d4d; /* Red for error messages */
+    margin-bottom: 15px;
+}
+
+/* Submit Button */
+.submitButton {
+    background-color: #223d3c; /* Primary button color */
+    color: #ffffff; /* White text */
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px; /* Increased font size for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.submitButton:hover {
+    background-color: #1a2a2a; /* Darken on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Back Button */
+.back-button {
+    background-color: #ccc; /* Light grey background */
+    color: #333; /* Dark text */
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px; /* Space above back button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: #bbb; /* Darken on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}

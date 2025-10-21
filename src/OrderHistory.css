@@ -1,0 +1,98 @@
+/* OrderHistory.css */
+
+.container {
+    max-width: 800px;
+    /* Set a maximum width for the container */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 20px;
+    /* Add some padding */
+    font-family: Arial, sans-serif;
+    /* Use a clean font */
+    background-color: #f9f9f9;
+    /* Light background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.header {
+    text-align: center;
+    /* Center the header */
+    color: #333;
+    /* Dark text color */
+    margin-bottom: 20px;
+    /* Space below the header */
+}
+
+.order-list {
+    border-top: 2px solid #007BFF;
+    /* Blue top border for separation */
+    padding-top: 20px;
+    /* Space below the border */
+}
+
+.order-item {
+    background-color: #fff;
+    /* White background for order items */
+    padding: 15px;
+    /* Padding inside each order item */
+    margin-bottom: 15px;
+    /* Space between order items */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    /* Light shadow */
+}
+
+.item-details {
+    border-left: 3px solid #007BFF;
+    /* Blue border on the left */
+    padding-left: 10px;
+    /* Space after the border */
+    margin-top: 10px;
+    /* Space above item details */
+}
+
+.review-button {
+    display: inline-block;
+    /* Align the button inline */
+    margin-top: 10px;
+    /* Space above the button */
+    padding: 10px 15px;
+    /* Padding inside the button */
+    background-color: #28a745;
+    /* Green background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+.review-button:disabled {
+    background-color: #ccc;
+    /* Grey background when disabled */
+    cursor: not-allowed;
+    /* Not allowed cursor */
+}
+
+.review-button:hover:not(:disabled) {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+.info-text {
+    text-align: center;
+    /* Center the info text */
+    color: #666;
+    /* Lighter color for info text */
+    margin-top: 20px;
+    /* Space above the info text */
+}

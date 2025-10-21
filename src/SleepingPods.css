@@ -1,0 +1,117 @@
+.sleepingPodsContainer {
+    text-align: center;
+   width:100%;
+   height: 100%;
+    background-color: #223D3C;
+}
+
+
+
+.listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* Space between cards */
+
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 270px;
+    height:430px;
+    /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Scale up the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Increase shadow on hover */
+}
+
+.image {
+
+    /* Ensure image takes full width of the card */
+    height: 100%;
+    /* Maintain aspect ratio */
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.outsideButton {
+    background-color: white;
+    z-index: 2;
+    /* Green color for the button */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition for button */
+}
+
+.outsideButton:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    transform: translateY(-2px);
+    /* Move button up slightly on hover */
+}
+
+.outsideButton:active {
+    transform: translateY(1px);
+    /* Move button down slightly when clicked */
+}
+@media (max-width: 480px) {
+.sleepingPodsContainer {
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #223D3C;
+    }
+    /* Header adjustments */
+    .header {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    /* Two cards per row */
+    .listContainer {
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        flex-basis: calc(50% - 10px);
+        /* Two cards per row with space */
+        max-width: calc(50% - 10px);
+        height: auto;
+        aspect-ratio: 3 / 4;
+        /* Maintain a consistent aspect ratio */
+        margin-bottom: 8px;
+    }
+
+    .title {
+        font-size: 0.9rem;
+        margin: 4px 0;
+    }
+
+    .outsideButton {
+        padding: 4px 8px;
+        font-size: 2rem;
+        width: 250px;
+            /* Ensure image takes full width of the card */
+            height: auto;
+    }
+}

@@ -1,0 +1,63 @@
+.booking-process {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.booking-process h2 {
+    text-align: center;
+}
+
+.time-slot-container {
+    margin-top: 20px;
+}
+
+.time-slot-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.time-slot-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.time-slot-button:hover {
+    background-color: #ddd;
+}
+
+.time-slot-button.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.time-slot-button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+.pod-quantity-container {
+    margin-top: 20px;
+}
+
+.pod-quantity-selector {
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

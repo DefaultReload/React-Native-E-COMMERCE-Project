@@ -1,0 +1,17 @@
+.container {
+    min-height: 800vh;
+    overflow-y: auto;
+    padding: 20px;
+    /* Adds padding for better spacing */
+}
+
+.cart-summary {
+    max-height: 400px;
+    /* Add a fixed max height for scrolling inside this container */
+    overflow-y: auto;
+}
+
+.order-total {
+    margin-top: 30px;
+    /* Adds some spacing between sections */
+}

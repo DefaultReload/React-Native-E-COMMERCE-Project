@@ -1,0 +1,95 @@
+/* Security.css */
+
+body {
+    background-color: #ffffff;
+    margin: 0; /* Ensure no default margin */
+    padding: 0; /* Ensure no default padding */
+    font-family: 'Arial', sans-serif; /* Default font for better readability */
+}
+
+.h1 {
+    font-size: 59px; /* Responsive font size */
+    font-weight: 600;
+    color: #333;
+    font-family: serif;
+    margin-bottom: 1.5rem; /* Spacing */
+    text-align: center;
+}
+
+.option {
+    padding: 1rem 1.5rem; /* Use rem for responsive padding */
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.option:hover {
+    background-color: #f8f8f8;
+}
+
+.tt{
+    font-size: 1rem; /* Responsive font size */
+    font-weight: 600;
+    color: #333;
+    margin-right: 10px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.description {
+    font-size: 0.875rem; /* Responsive font size */
+    color: #777;
+    margin-left: 10px;
+    flex: 1; /* Allow this to grow and fill available space */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+        padding-left: 10px; /* Less padding on mobile */
+    }
+
+    .option {
+        padding: 0.75rem; /* Adjust padding for smaller screens */
+    }
+
+    .title {
+        font-size: 0.9rem; /* Smaller title font on mobile */
+    }
+
+    .description {
+        font-size: 0.8rem; /* Smaller description font on mobile */
+    }
+
+    .icon {
+        width: 18px; /* Slightly smaller icon on mobile */
+        height: 18px; /* Slightly smaller icon on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.25rem; /* Further reduce font size for very small screens */
+        padding-left: 5px; /* Minimal padding on very small screens */
+    }
+
+    .option {
+        padding: 0.5rem; /* Reduce padding even further */
+    }
+
+    .title {
+        font-size: 0.8rem; /* Further reduce title font size */
+    }
+
+    .description {
+        font-size: 0.7rem; /* Further reduce description font size */
+    }
+}

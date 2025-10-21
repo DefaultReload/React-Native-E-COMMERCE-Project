@@ -1,0 +1,89 @@
+/* AccountInfo.css */
+
+.account-info-container {
+    padding: 2rem; /* Responsive padding */
+    background-color: #ffffff;
+    max-width: 470px; /* Maximum width */
+    margin: 0 auto; /* Center align */
+}
+
+.Heading {
+    font-size: 2rem; /* Responsive font size */
+    font-weight: 600;
+    color: #333;
+    font-family: serif;
+    margin-bottom: 1.5rem; /* Spacing */
+    text-align: center;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between; /* Space between label/value */
+    margin-bottom: 1rem; /* Spacing */
+    padding: 0.5rem 0; /* Responsive padding */
+    border-bottom: 1px solid #e0e0e0; /* Separation line */
+}
+
+.label {
+    font-size: 1.125rem; /* Responsive label font size */
+    font-weight: 600;
+    color: #333;
+    margin-right: 0.5rem; /* Spacing */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.value {
+    font-size: 1rem; /* Responsive value font size */
+    color: #777;
+}
+
+.input {
+    width: 100%; /* Full width input */
+    padding: 0.625rem; /* Responsive padding */
+    margin: 0.5rem 0; /* Margin */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 0.5rem; /* Rounded corners */
+    font-size: 1rem; /* Responsive font size */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.save-button {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.625rem 1rem; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+    margin-right: 0.5rem; /* Space between buttons */
+}
+
+.cancel-button {
+    background-color: #f8d7da; /* Red background for error */
+    color: #721c24; /* Text color for error */
+    border: none; /* No border */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 0.625rem 1rem; /* Padding */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.edit-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.next {
+    width: 1.25rem; /* Responsive icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.loading {
+    text-align: center; /* Center loading text */
+    font-size: 1.25rem; /* Responsive loading font size */
+}
+
+.error-container {
+    text-align: center; /* Center error message */
+    color: #dc3545; /* Error color */
+    font-size: 1.125rem; /* Responsive error font size */
+}

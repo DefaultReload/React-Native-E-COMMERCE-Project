@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'serif';
+    /* Custom font */
+    color: #082c24;
+    /* Color similar to the one in the image */
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    /* Space for an icon */
+    background-color: #f5f5f5;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.show-password-text {
+    text-align: right;
+    color: #008080;
+    /* Color for visibility toggle */
+    margin-bottom: 10px;
+}
+
+.forgot-password {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.reset-text {
+    color: #ff6347;
+    /* Accent color for 'Reset' */
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #082c24;
+    /* Button background color from the image */
+    padding: 15px 0;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-button-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.google-login-text {
+    text-align: center;
+    color: #333;
+    background-color: #92ba92;
+    margin-bottom: 20px;
+}
+
+.error-text {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.signup-text {
+    color: #333;
+}
+
+.sign-up {
+    color: #008080;
+    font-weight: bold;
+    cursor: pointer;
+}

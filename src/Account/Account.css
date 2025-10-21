@@ -1,0 +1,107 @@
+/* Main container for account page layout */
+.account-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+/* Sidebar styles */
+.account-sidebar {
+    width: 250px;
+    background-color: #223d3c;
+    padding-top: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    border-radius: 15px; /* Add rounded corners */
+}
+
+.account-sidebar h1 {
+    font-size: 25px;
+    color: white;
+    background-color: #223d3c;
+    padding: 15px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    font-family: serif;
+
+}
+
+/* Navigation link styles */
+.account-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-sidebar ul li {
+    padding: 15px;
+    font-size: 16px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+/* Active and hover styles for links */
+.nav-link:hover,
+.nav-link.active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+.nav-home {
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+/* Content area styles */
+.account-content {
+    margin-left: 250px;
+    padding: 40px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .account-container {
+        flex-direction: column;
+    }
+
+    .account-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .account-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .nav-home {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .account-sidebar h1 {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .account-sidebar ul li {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .account-content {
+        padding: 10px;
+    }
+}

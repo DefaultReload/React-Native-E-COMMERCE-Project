@@ -1,0 +1,137 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-img {
+    width: 40px;
+    height: 40px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    color: #0056b3;
+}
+
+.cart-icon-container {
+    position: relative;
+    margin-left: 20px;
+}
+
+.cart-img {
+    width: 35px;
+    height: 35px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 3px 7px;
+}
+
+.side-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-navbar-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.side-navbar-link:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title {
+        margin: 10px 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .side-navbar {
+        display: block;
+    }
+}

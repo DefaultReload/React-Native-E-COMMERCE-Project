@@ -1,0 +1,112 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 160px;
+    height: 90vh;
+    /* Full height of the viewport */
+    width: 115vw;
+    /* Full width of the viewport */
+    overflow: hidden;
+    /* Prevent scrolling if the image is larger */
+    background-image: url('ReLax.png');
+    /* Replace with your image path */
+    background-size: cover;
+    /* Cover the entire container */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    background-position: center;
+    /* Center the image */
+    position: relative;
+    /* Ensure proper positioning */
+}
+
+.welcome-text {
+    font-size: 36px;
+    /* Adjust size as needed */
+    color: white;
+    /* Change text color for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Optional shadow for readability */
+    z-index: 10;
+    /* Ensure text is on top of other elements */
+}
+
+.animated-plane {
+    position: absolute;
+    top: 10%;
+    /* Place it near the top */
+    left: -10%;
+    /* Start off-screen to the left */
+    width: 60px;
+    /* Adjust the size of the plane */
+    height: 60px;
+    /* Adjust the size of the plane */
+    background-image: url('plane-icon.png');
+    /* Replace with your plane image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: flyAcross 6s ease-in-out infinite;
+    /* Animation for the plane */
+}
+
+.animated-bed {
+    position: absolute;
+    bottom: 10%;
+    /* Place it near the bottom */
+    left: 50%;
+    /* Center the bed horizontally */
+    transform: translateX(-50%);
+    /* Align the bed horizontally */
+    width: 100px;
+    /* Adjust the size of the bed */
+    height: 60px;
+    /* Adjust the size of the bed */
+    background-image: url('bed-icon.png');
+    /* Replace with your bed image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: bounce 2s ease-in-out infinite;
+    /* Animation for the bed */
+}
+
+/* Keyframes for the plane animation */
+@keyframes flyAcross {
+    0% {
+        transform: translateX(-100%);
+        /* Start off the left side */
+    }
+
+    50% {
+        transform: translateX(100vw);
+        /* Move to the right side */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Go back to the left side */
+    }
+}
+
+/* Keyframes for the bed animation */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Start and end at the original position */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Bounce upwards */
+    }
+}

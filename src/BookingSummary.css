@@ -1,0 +1,57 @@
+.booking-summary {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.detail {
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+.separator {
+    height: 1px;
+    background-color: #000000;
+    margin: 15px 0;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.button {
+    background-color:#223D3C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
